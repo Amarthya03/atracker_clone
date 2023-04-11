@@ -1,5 +1,5 @@
 import Calendar from "../tabs/Calendar";
-import History from "../tabs/History";
+import History from "../tabs/History/History";
 import Report from "../tabs/Report";
 import Settings from "../tabs/Settings";
 import Today from "../tabs/Today/index";

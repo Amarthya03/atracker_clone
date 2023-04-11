@@ -14,6 +14,13 @@ const AddTask = () => {
 						navigator.goBack();
 					}}
 				/>
+				<Appbar.Content title="Add Task" />
+				<Appbar.Action
+					icon="plus"
+					onPress={() => {
+						console.log("Task added");
+					}}
+				/>
 			</Appbar.Header>
 		</>
 	);

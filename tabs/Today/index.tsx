@@ -1,9 +1,8 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Today from "./pages/Today";
-import AddTask from "./pages/AddTask";
-import TaskEntry from "./pages/TaskEntry";
+import AddTask from "./pages/AddTask/AddTask";
+import TaskEntry from "./pages/TaskEntry/TaskEntry";
 
 const TodayNavigator = createNativeStackNavigator();
 
