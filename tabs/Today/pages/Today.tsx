@@ -5,8 +5,11 @@ import TodaysOverview from "../components/TodaysOverview";
 import CurrentTask from "../components/CurrentTask";
 import Tasks from "../components/Tasks";
 import { FAB, List, MD3Colors } from "react-native-paper";
+import { useNavigation } from "@react-navigation/native";
 
 const Today = () => {
+	const navigator = useNavigation();
+
 	return (
 		<>
 			<AppbarComponent />
@@ -46,6 +49,11 @@ const Today = () => {
 					icon="plus"
 					style={styles.fab}
 					label="Create Task"
+					onPress={() => {
+						navigator.navigate("TodayTab", {
+							screen: "CreateTask",
+						});
+					}}
 				/>
 			</View>
 		</>
